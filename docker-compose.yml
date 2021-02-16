@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
   db:
-    image: postgres:latest
+    build: db
     ports:
       - "5432:5432"
     environment:
